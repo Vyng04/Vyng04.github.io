@@ -7,9 +7,11 @@
     <h1>Application 6 – Vy Nguyen</h1>
 
     <p>
-        This project demonstrates a real-time embedded medical monitoring system built using an ESP32.
-        The system reads two patient-related sensor inputs under hard deadlines, then raises alerts using
-        LED signals and timestamped messages. A button ISR simulates emergency nurse intervention.
+        This project showcases a real-time embedded medical monitoring system developed on an ESP32 microcontroller. The device continuously measures two critical patient-related signals: a potentiometer simulating medication dosage levels and an LDR sensor modeling patient reaction or distress. Both sensors are managed under strict 100 ms hard real-time deadlines using FreeRTOS to ensure no readings are missed, even under heavy system load.
+
+        When abnormal values are detected, the system raises immediate LED-based alerts and prints timestamped warnings through the serial console, demonstrating deterministic and traceable behavior. In addition, a hardware button triggers an interrupt service routine (ISR), simulating an emergency nurse request that bypasses regular scheduling to guarantee an instant response.
+
+        Together, these components form a reliable medical-alert prototype that highlights the importance of real-time constraints, interrupt handling, and concurrent task scheduling in life-critical embedded systems.
     </p>
 
     <h2>Project Demo Video</h2>
