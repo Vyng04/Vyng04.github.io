@@ -1,19 +1,64 @@
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="mainNav">
-    
-    <!-- Left-side brand name -->
-    <a class="navbar-brand" href="index.html">Vy Nguyen's Portfolio</a>
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Mobile-friendly collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Vy Nguyen">
 
-    <!-- Keep the collapse container but empty it to remove menu links -->
-    <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav mr-auto">
-            <!-- No small headers or menu items -->
-        </ul>
+    <!-- Bootstrap + JQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <title>Application 6 – Vy Nguyen</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="mainNav">
+        <a class="navbar-brand" href="index.html">Vy Nguyen's Portfolio</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- No dropdown menu -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto"></ul>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <div class="column" style="margin-top: 100px;">
+
+        <h1>Application 6 – Vy Nguyen</h1>
+
+        <p>
+            This project demonstrates a real-time embedded medical monitoring system built using an ESP32.
+            The device continuously reads two patient-related sensor inputs: a medication-level potentiometer
+            and an LDR-based patient reaction sensor. Both run under hard real-time deadlines using FreeRTOS.
+            A button interrupt simulates a nurse emergency request. Alerts are handled through LED signals
+            and timestamped serial output to prove deterministic timing.
+        </p>
+
+        <h2>Project Demo Video</h2>
+        <p>Below is the demonstration of the working real-time system:</p>
+
+        <!-- Embedded YouTube Video -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+                    src="https://www.youtube.com/embed/kT-N02fdGbM"
+                    allowfullscreen></iframe>
+        </div>
+
     </div>
-</nav>
+
+</body>
+</html>
